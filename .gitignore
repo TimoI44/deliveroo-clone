@@ -33,3 +33,8 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
+
+#Sanity config
+sanity/sanity.config.js
+sanity/sanity.cli.js
+sanity/node_modules
