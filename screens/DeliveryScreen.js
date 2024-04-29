@@ -6,7 +6,12 @@ import { selectRestaurant } from '../features/restaurantSlice';
 import { XMarkIcon } from 'react-native-heroicons/solid';
 import * as Progress from "react-native-progress";
 import MapView, { Marker } from "react-native-maps";
-
+/*
+//TODOS
+- Store api keys save
+- Delete Basket after Restaurant change
+- Sanity data
+*/
 
 const DeliveryScreen = () => {
 

@@ -10,6 +10,7 @@ import DishRow from '../components/DishRow';
 import BasketIcon from '../components/BasketIcon';
 import { useDispatch } from 'react-redux';
 import { setRestaurant } from '../features/restaurantSlice';
+import { setBasket } from '../features/basketSlice';
 
 const RestaurantScreen = () => {
 
@@ -32,7 +33,8 @@ const RestaurantScreen = () => {
         dispatch(setRestaurant({
             id, imgUrl, title, rating, genre, 
             address, short_description, dishes, long, lat
-        }))
+        }));
+        dispatch(setBasket([]));
     }, [dispatch])
 
     return (
